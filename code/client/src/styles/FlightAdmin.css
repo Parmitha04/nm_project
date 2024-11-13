@@ -1,0 +1,61 @@
+.flightAdmin-page {
+    padding-top: 15vh;
+    height: 100vh;
+    background-color: #f2f6f9; /* Light background for a clean look */
+}
+
+.notApproved-box {
+    width: 60%;
+    text-align: center;
+    margin: 25vh auto; /* Centered and slightly adjusted vertical margin */
+    background-color: rgba(237, 239, 241, 0.85); /* Increased opacity for more visibility */
+    padding: 4vh 4vw;
+    border-radius: 0.7rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.notApproved-box h3 {
+    color: #d9534f; /* Muted red for a softer, yet noticeable emphasis */
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+.notApproved-box p {
+    color: #506677; /* Softer blue-gray for a modern look */
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1vh;
+}
+
+/* Additional Responsive Styling */
+@media (max-width: 768px) {
+    .notApproved-box {
+        width: 80%;
+        padding: 3vh 3vw;
+    }
+
+    .notApproved-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .notApproved-box p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra responsiveness for smaller screens */
+@media (max-width: 480px) {
+    .notApproved-box {
+        width: 90%;
+        padding: 2.5vh 3vw;
+    }
+
+    .notApproved-box h3 {
+        font-size: 1.4rem;
+    }
+
+    .notApproved-box p {
+        font-size: 0.85rem;
+    }
+}

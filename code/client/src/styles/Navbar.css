@@ -1,0 +1,65 @@
+.navbar {
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #000000; /* Black background for a bold, sleek look */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    box-shadow: rgba(255, 0, 0, 0.2) 0px 7px 29px 0px; /* Red shadow for consistency */
+}
+
+.navbar h3 {
+    color: #ff0000; /* Bright red for a bold title */
+    font-size: 1.7rem; /* Slightly larger title for better visibility */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-options {
+    display: flex;
+    gap: 2rem; /* Increased gap for better spacing */
+}
+
+.nav-options p {
+    margin: 0;
+    color: #ffffff; /* White text for contrast against the black background */
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s, letter-spacing 0.2s;
+}
+
+.nav-options p:hover {
+    color: #ff0000; /* Red hover effect */
+    transform: scale(1.1); /* Slightly larger text on hover */
+    letter-spacing: 0.15rem; /* Increased spacing for emphasis */
+}
+
+.nav-options p:active {
+    color: #c70000; /* Darker red when clicked */
+    transform: scale(0.98); /* Minor press effect */
+}
+
+/* Additional Responsive Styling */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 5%; /* Adjust padding for smaller screens */
+        background-color: #1a1a1a; /* Slightly darker background for mobile */
+    }
+
+    .nav-options {
+        gap: 1.5rem;
+    }
+
+    .nav-options p {
+        font-size: 1rem;
+        color: #f1f1f1; /* Lighter text for readability on smaller screens */
+    }
+}

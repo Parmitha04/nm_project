@@ -1,0 +1,114 @@
+.BookFlightPage {
+    width: 100%;
+    min-height: 100vh;
+    padding: 12vh 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f7fa;
+}
+
+/* Booking container styling */
+.BookingFlightPageContainer {
+    width: 50%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 3vh 4%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 0.75rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header styling */
+.BookingFlightPageContainer h2 {
+    margin: 0 0 4vh;
+    text-align: center;
+    color: #366878;
+    font-size: 1.8rem;
+}
+
+/* Paragraph styling */
+.BookingFlightPageContainer p {
+    margin: 0 0 8px;
+    color: #366878;
+    font-size: 1rem;
+}
+
+/* Bold text inside paragraphs */
+.BookingFlightPageContainer p b {
+    font-weight: 600;
+    color: #2a596b;
+}
+
+/* Dual-column layout */
+.BookingFlightPageContainer span {
+    display: grid;
+    grid-template-columns: 65% 32%;
+    gap: 3%;
+}
+
+/* Triple-column layout */
+.BookingFlightPageContainer .span3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+}
+
+/* Button styling */
+.BookingFlightPageContainer button {
+    width: 40%;
+    margin: 30px auto 0;
+    padding: 12px 0;
+    background-color: #366878;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+/* Button hover effect */
+.BookingFlightPageContainer button:hover {
+    background-color: #2a596b;
+}
+
+/* List item styling */
+.BookingFlightPageContainer li {
+    font-size: 0.9rem;
+    color: #2a596b;
+}
+
+/* New passenger section */
+.new-passenger h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #305b72;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* Passenger inputs layout */
+.new-passenger-inputs {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 3%;
+}
+
+/* Select input styling */
+.new-passenger-inputs select {
+    padding-left: 12px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #b0d0db;
+    border-radius: 4px;
+    background-color: rgba(240, 248, 255, 0.2);
+    color: #2a596b;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Select focus effect */
+.new-passenger-inputs select:focus {
+    border-color: #366878;
+}

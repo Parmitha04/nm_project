@@ -1,0 +1,200 @@
+.landingPage {
+    width: 100%;
+    height: auto; /* Use 'auto' for better compatibility */
+    background-color: #f8f9fa; /* Light background color for the whole page */
+}
+
+.landingHero {
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+    background-image: linear-gradient(45deg, rgba(36, 59, 69, 0.7), rgba(0, 0, 0, 0.5)), url('../assets/homepage.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.landingHero::-webkit-scrollbar {
+    display: none;
+}
+
+.landingHero-title {
+    width: 60%;
+    margin: 6% 0 0 4%;
+    text-align: center; /* Center align the title */
+    color: #FFFFFF; /* Pure white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for depth */
+}
+
+.landingHero-title h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.landingHero-title p {
+    color: rgba(255, 255, 255, 0.85); /* Slightly more opaque */
+}
+
+.Flight-search-container {
+    margin: 5vh auto;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly lighter */
+    backdrop-filter: blur(15px);
+    padding: 20px 25px;
+    border-radius: 0.8rem; /* Increased border radius for softer look */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    transition: transform 0.3s ease; /* Add smooth transition on hover */
+}
+
+.Flight-search-container:hover {
+    transform: translateY(-10px); /* Slightly lift the container on hover */
+}
+
+.Flight-search-container h3 {
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    color: #D4E7FF; /* Lighter shade of blue */
+}
+
+.Flight-search-container p {
+    padding-bottom: 10px;
+    text-align: center;
+    color: #FF6666; /* Brighter red for warnings */
+    font-weight: 500;
+}
+
+.form-check-label {
+    color: #FFFFFF; /* Pure white for labels */
+}
+
+.Flight-search-container-body {
+    display: flex;
+    margin-top: 3vh;
+    gap: 15px;
+}
+
+.Flight-search-container select,
+.Flight-search-container input {
+    padding-left: 15px;
+    width: 15vw;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: none;
+    color: #1A3445; /* Darker text color */
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+.Flight-search-container button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #4A90E2; /* Bright blue button */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+}
+
+.Flight-search-container button:hover {
+    background-color: #357ABD; /* Darker blue on hover */
+    transform: translateY(-5px); /* Slightly lift the button on hover */
+}
+
+.availableFlightsContainer {
+    margin: 3vh 5vw;
+}
+
+.availableFlightsContainer h1 {
+    color: #FFFFFF; /* White for the heading */
+    text-align: center; /* Center align the heading */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add subtle text shadow */
+}
+
+.availableFlightsContainer .Flights {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.availableFlightsContainer .Flights .Flight {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 2vh 2vw;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.availableFlightsContainer .Flights .Flight p {
+    margin: 0;
+    color: #C9CDD1; /* Light grey for text */
+}
+
+.availableFlightsContainer .Flights .Flight p b {
+    font-weight: 600;
+    color: #E3EBEB; /* Slightly lighter for emphasis */
+}
+
+.section-about {
+    min-height: 50vh;
+    background: linear-gradient(145deg, rgb(205, 227, 249) 0%, rgb(232, 239, 243) 55%, rgb(213, 189, 222) 100%);
+    padding: 5vh 10vw; /* Add padding for better spacing */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 0.8rem; /* Rounded corners */
+}
+
+.section-about h2 {
+    font-weight: 600;
+    color: #055791;
+    text-align: center; /* Center align the heading */
+    margin-bottom: 2rem; /* Add spacing below the heading */
+}
+
+.section-about p {
+    text-align: justify;
+    color: #055791;
+}
+
+.section-about span {
+    display: block; /* Ensure full-width */
+    text-align: center;
+    color: #6BADEB;
+    margin-top: 5vh;
+}
+
+.section-about span h5 {
+    font-size: 1rem;
+}
+
+.flightAnimation {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Hide anything that overflows the container */
+    background: linear-gradient(180deg, #87CEEB, #FFFFFF); /* Sky gradient background */
+}
+
+.airplane {
+    position: absolute;
+    left: -100px; /* Start the airplane off the left edge */
+    top: 20%;
+    width: 100px;
+    height: auto;
+    animation: flyAcross 10s linear infinite;
+}
+
+@keyframes flyAcross {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(110vw); /* Move the airplane across the screen */
+    }
+}

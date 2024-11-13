@@ -1,0 +1,139 @@
+.admin-page {
+    margin-top: 15vh;
+    height: fit-content;
+    background: linear-gradient(120deg, #000000, #2c2c2c); /* Dark gradient background */
+    padding-bottom: 5vh; /* Adding padding at the bottom */
+}
+
+.admin-page-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* More responsive columns */
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2vw; /* Add some padding */
+}
+
+.admin-card {
+    padding: 3vh 2vw;
+    text-align: center;
+    width: 100%;
+    height: auto; /* Make height responsive */
+    box-shadow: rgba(255, 0, 0, 0.2) 0px 2px 8px 0px; /* Red shadow effect */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.8); /* Black background */
+    border-radius: 0.7rem; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.admin-card:hover {
+    box-shadow: rgba(255, 0, 0, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.5) 0px 8px 16px -8px; /* Red shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.admin-card h4 {
+    margin: 0;
+    color: #ff4d4d; /* Red color for headings */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+.admin-card p {
+    margin: 0;
+    color: #e6e6e6; /* Light gray for text */
+    font-family: 'Arial', sans-serif;
+}
+
+.admin-requests-container {
+    margin: 10vh 0 3vh 3vw;
+    border: 1px solid #ff4d4d; /* Red border */
+    width: 70%;
+    padding: 2vh 2vw;
+    background: rgba(0, 0, 0, 0.85); /* Darker background */
+    border-radius: 0.7rem; /* Rounded corners */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px; /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.admin-requests-container:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.admin-requests-container h3 {
+    color: #ff4d4d; /* Red color for headings */
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+    text-align: center; /* Center align */
+}
+
+.admin-requests {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4vh;
+    height: 30vh;
+    overflow-y: scroll;
+    margin-left: 2vw;
+}
+
+.admin-request {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    background-color: rgba(30, 30, 30, 0.8); /* Darker background */
+    border: 1px solid #ff4d4d; /* Red border */
+    padding: 15px 25px;
+    margin-right: 10px;
+    border-radius: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.admin-request:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: rgba(255, 0, 0, 0.5) 0px 10px 20px -5px, rgba(0, 0, 0, 0.2) 0px 6px 10px -5px; /* Red shadow on hover */
+}
+
+.admin-request span {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-request span b {
+    font-weight: 700;
+    color: #ff4d4d; /* Red for bold text */
+}
+
+.admin-request-actions {
+    display: flex;
+    gap: 30px;
+}
+
+.admin-request-actions button {
+    width: 7rem;
+    background-color: #ff4d4d; /* Red button color */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.admin-request-actions button:hover {
+    background-color: #e60000; /* Darker red on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-requests-container {
+        width: 90%; /* Adjust container width for smaller screens */
+        margin-left: 5vw;
+    }
+
+    .admin-page-cards {
+        grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    }
+} /* Close the media query block */

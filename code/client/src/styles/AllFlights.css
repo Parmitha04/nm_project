@@ -1,0 +1,82 @@
+.allFlightsPage {
+    margin: 13vh 0 0 0;
+    height: fit-content;
+    width: 100%;
+    background: linear-gradient(120deg, #000000, #2c2c2c); /* Dark gradient background */
+    padding-bottom: 5vh; /* Adding padding at the bottom */
+}
+
+.allFlightsPage h1 {
+    color: #ff4d4d; /* Red color for headings */
+    margin-left: 3vw;
+    font-family: 'Arial', sans-serif; /* Clean font */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+.allFlights {
+    margin-top: 5vh;
+    width: 90%;
+    margin-left: 5%;
+    height: fit-content;
+    padding-bottom: 5vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* More responsive columns */
+    gap: 30px;
+}
+
+.allFlights .allFlights-Flight {
+    background-color: rgba(0, 0, 0, 0.85); /* Dark background */
+    width: 100%;
+    padding: 3vh 2vw;
+    border-radius: 0.7rem;
+    box-shadow: rgba(255, 0, 0, 0.2) 0px 8px 24px; /* Red shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.allFlights .allFlights-Flight:hover {
+    box-shadow: rgba(255, 0, 0, 0.5) 0px 10px 50px; /* Stronger red shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.allFlights .allFlights-Flight span {
+    display: flex;
+    gap: 25px;
+}
+
+.allFlights .allFlights-Flight p {
+    margin: 0;
+    margin-bottom: 3px;
+    color: #e6e6e6; /* Light text color for readability */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+.allFlights .allFlights-Flight p b {
+    font-weight: 600;
+    color: #ff4d4d; /* Red color for bold text */
+}
+
+.allFlights .allFlights-Flight ol {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.allFlights .allFlights-Flight ol b {
+    font-weight: 500;
+    color: #ff4d4d; /* Red color for ordered list items */
+}
+
+.allFlights .allFlights-Flight button {
+    margin-top: 15px;
+    background-color: #ff4d4d; /* Red button color */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.allFlights .allFlights-Flight button:hover {
+    background-color: #e60000; /* Darker red on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
